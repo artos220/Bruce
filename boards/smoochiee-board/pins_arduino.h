@@ -62,10 +62,10 @@ static const uint8_t SCK = 18;
 #define USER_SETUP_LOADED 1
 #define ST7789_DRIVER 1
 #define TFT_RGB_ORDER 0
-#define TFT_WIDTH 170
-#define TFT_HEIGHT 320
+#define TFT_WIDTH 240
+#define TFT_HEIGHT 240
 #define TFT_BACKLIGHT_ON 1
-#define TFT_BL 6
+#define TFT_BL 6 // blk
 #define TFT_RST 16
 #define TFT_DC 15
 #define TFT_MISO 8
@@ -83,8 +83,8 @@ static const uint8_t SCK = 18;
 #define SDCARD_MISO 8
 #define SDCARD_MOSI 17
 
-#define GROVE_SDA 47
-#define GROVE_SCL 48
+#define GROVE_SDA -1
+#define GROVE_SCL -1
 
 #define SPI_SCK_PIN 13
 #define SPI_MOSI_PIN 12
@@ -107,18 +107,17 @@ static const uint8_t SCK = 18;
 // USE BOOST ENABLE PMIC 5V OUTPUT
 #define USE_BOOST
 
-
 // Mic#
-#define PIN_CLK 1
-#define PIN_DATA 10
-#define PIN_WS 2
+#define PIN_CLK -1
+#define PIN_DATA -1
+#define PIN_WS -1
 
 // IO EXPANDER
 #define USE_IO_EXPANDER
 #define IO_EXPANDER_AW9523
-#define IO_EXP_GPS 13
-#define IO_EXP_MIC 4
-#define IO_EXP_VIBRO 2
-#define IO_EXP_CC_RX 7
-#define IO_EXP_CC_TX 12
+#define IO_EXP_GPS -1
+#define IO_EXP_MIC -1
+#define IO_EXP_VIBRO -1
+#define IO_EXP_CC_RX -1
+#define IO_EXP_CC_TX -1
 #endif /* Pins_Arduino_h */
